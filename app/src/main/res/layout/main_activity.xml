@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/buttonGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnGetPreciseLocation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Get Precise Location"/>
+
+        <Button
+            android:id="@+id/btnGetCoarseLocation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Get Coarse Location"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnPauseUpdates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Pause Updates"/>
+
+    <TextView
+        android:id="@+id/tvLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnPauseUpdates"
+        android:layout_marginTop="10dp"
+        android:text="Latitude: "/>
+
+    <TextView
+        android:id="@+id/tvLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvLatitude"
+        android:layout_marginTop="8dp"
+        android:text="Longitude: "/>
+
+    <TextView
+        android:id="@+id/tvAccuracy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvLongitude"
+        android:layout_marginTop="8dp"
+        android:text="Accuracy: "/>
+
+    <TextView
+        android:id="@+id/tvAltitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvAccuracy"
+        android:layout_marginTop="8dp"
+        android:text="Altitude: "/>
+
+    <TextView
+        android:id="@+id/tvSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvAltitude"
+        android:layout_marginTop="8dp"
+        android:text="Speed: "/>
+
+    <TextView
+        android:id="@+id/tvBearing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSpeed"
+        android:layout_marginTop="8dp"
+        android:text="Bearing: "/>
+
+    <TextView
+        android:id="@+id/tvProvider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvBearing"
+        android:layout_marginTop="8dp"
+        android:text="Provider: "/>
+
+    <TextView
+        android:id="@+id/tvPhoneState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvProvider"
+        android:layout_marginTop="8dp"
+        android:text="Phone State (on or off): "/>
+
+    <TextView
+        android:id="@+id/tvNetworkType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPhoneState"
+        android:layout_marginTop="8dp"
+        android:text="Network Type: "/>
+
+    <TextView
+        android:id="@+id/tvWifiState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvNetworkType"
+        android:layout_marginTop="8dp"
+        android:text="Wi-Fi State: "/>
+
+    <TextView
+        android:id="@+id/tvBatteryStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvWifiState"
+        android:layout_marginTop="8dp"
+        android:text="Battery Status: "/>
+
+    <TextView
+        android:id="@+id/tvBluetoothStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvBatteryStatus"
+        android:layout_marginTop="8dp"
+        android:text="Bluetooth Status: "/>
+
+    <TextView
+        android:id="@+id/tvDeviceModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvBluetoothStatus"
+        android:layout_marginTop="8dp"
+        android:text="Device Model: "/>
+
+
+    <TextView
+        android:id="@+id/tvBrightness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDeviceModel"
+        android:layout_marginTop="8dp"
+        android:text="Brightness: "/>
+
+    <TextView
+        android:id="@+id/tvDeviceInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvBrightness"
+        android:layout_marginTop="8dp"
+        android:text="Device Info: "/>
+
+    <TextView
+        android:id="@+id/tvOSVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDeviceInfo"
+        android:layout_marginTop="8dp"
+        android:text="OS Version: "/>
+
+    <TextView
+        android:id="@+id/tvHardwareInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvOSVersion"
+        android:layout_marginTop="8dp"
+        android:text="Hardware Info: "/>
+
+    <TextView
+        android:id="@+id/tvDisplayInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvHardwareInfo"
+        android:layout_marginTop="8dp"
+        android:text="Display Info: "/>
+
+    <TextView
+        android:id="@+id/tvStorageInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDisplayInfo"
+        android:layout_marginTop="8dp"
+        android:text="Storage Info: "/>
+
+    <TextView
+        android:id="@+id/tvRAMInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvStorageInfo"
+        android:layout_marginTop="8dp"
+        android:text="RAM Info: "/>
+
+    <TextView
+        android:id="@+id/tvAndroidID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvRAMInfo"
+        android:layout_marginTop="8dp"
+        android:text="Android ID: "/>
+
+    <TextView
+        android:id="@+id/tvAdvertisingID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvAndroidID"
+        android:layout_marginTop="8dp"
+        android:text="Advertising ID: "/>
+
+    <TextView
+        android:id="@+id/tvGooglePlayServicesID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvAdvertisingID"
+        android:layout_marginTop="8dp"
+        android:text="Google Play Services ID: "/>
+
+    <TextView
+        android:id="@+id/tvAppForegroundStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvGooglePlayServicesID"
+        android:text="App Foreground Status: Unknown"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+
+
+
+</RelativeLayout>
